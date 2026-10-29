@@ -1,0 +1,53 @@
+! Title: Personal AdGuard DNS Filter
+! Description: Blocks Reddit and TikTok. Messenger/Facebook domains are intentionally NOT blocked.
+! Homepage: https://github.com/romeothethird/adguard-dns-filter
+! License: MIT
+! Expires: 1 day
+!
+! Syntax: ||domain^ blocks the domain and all of its subdomains.
+!
+! ------------------------------------------------------------
+! Reddit
+! ------------------------------------------------------------
+||reddit.com^
+||redd.it^
+||redditmedia.com^
+||redditstatic.com^
+||reddituploads.com^
+||redditspace.com^
+||redditinc.com^
+||reddit.map.fastly.net^
+!
+! ------------------------------------------------------------
+! TikTok
+! Note: some ByteDance CDN domains below are shared with CapCut and Lemon8.
+! ------------------------------------------------------------
+||tiktok.com^
+||tiktokv.com^
+||tiktokv.us^
+||tiktokw.us^
+||tiktokcdn.com^
+||tiktokcdn-us.com^
+||tiktokcdn-eu.com^
+||tiktokd.net^
+||tiktokd.org^
+||tiktokrow-cdn.com^
+||tik-tokapi.com^
+||ttwstatic.com^
+||ttlivecdn.com^
+||byteoversea.com^
+||ibytedtos.com^
+||ibyteimg.com^
+||ipstatp.com^
+||muscdn.com^
+||musical.ly^
+!
+! ------------------------------------------------------------
+! Allowlist: keep Messenger working (overrides any other list you subscribe to)
+! ------------------------------------------------------------
+@@||messenger.com^
+@@||m.me^
+@@||facebook.com^
+@@||fbcdn.net^
+@@||fbsbx.com^
+@@||facebook.net^

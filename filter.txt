@@ -51,3 +51,6 @@
 @@||fbcdn.net^
 @@||fbsbx.com^
 @@||facebook.net^
+!
+! Facebook Audience Network ads: $important wins over the facebook.com allowlist above
+||an.facebook.com^$important
